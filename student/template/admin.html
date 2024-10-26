@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>UP Board Books</title>
+    </head>
+
+    <body>
+        <form method="post" name="result_form" id="result_form" action="/boardresults/result_page.php">
+            <div>
+                <input type="text" placeholder="search admin no" name="admin_number" id="admin_id" />
+                <input type="submit" value="Admin Detail" id="get_result" onclick="checkValue()"/>
+            </div>
+        </form>
+    </body>
+</html>
+
+<script>
+    function checkValue(){
+        if(document.getElementById("admin_id").value == ""){
+            alert("Enter Admin no");
+        }
+    }
+
+</script>

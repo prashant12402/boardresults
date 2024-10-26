@@ -7,9 +7,20 @@
     $percentage = 0;
     $resultStatus = "";
 
-    if($_SERVER["REQUEST_METHOD"] == "POST"){
+    //var_dump($GLOBALS);
+    //var_dump($_SERVER);
 
-        $studentRollNumber = $_POST['roll_number'];
+    if($_SERVER["REQUEST_METHOD"] == "GET"){
+        
+        /*
+        $rollNumber = $_REQUEST["roll_number"];
+        print("query string=".$rollNumber."<br>");
+        $idNumber = $_REQUEST["id_number"];
+        print("id =".$idNumber."\r\n");
+        */
+
+
+        $studentRollNumber = $_GET['roll_number'];
         $results = get_result($studentRollNumber);
 
         //var_dump($results);
@@ -32,12 +43,18 @@
                 echo $results[$i]['Id'], '<br>';
             }*/
 
-            require("main_template.php");
+            require("result_display.php");
 
         } else {
-            require("main_template_error.php");
+            require("result_error.html");
         }
     }
+
+    if($_SERVER["REQUEST_METHOD"] == "POST"){
+        
+        print("I am here, I am post request");
+    }
+
 
     function get_connection(){
         $dsn = "mysql:host=localhost;dbname=upboardresult";

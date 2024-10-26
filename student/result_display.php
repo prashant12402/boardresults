@@ -7,19 +7,19 @@
         <form>
             <div>
                 <label>Student Name :</label>
-                <label><?php  echo $results[0]['name'] ?></label>
+                <label><?php  echo $results[1]['name'] ?></label>
             </div>
             <div>
                 <label>Course Name : </label>
-                <label><?php  echo $results[0]['course_name'] ?></label>
+                <label><?php  echo $results[1]['course_name'] ?></label>
             </div>
             <div>
                 <label>Father Name : </label>
-                <label><?php  echo $results[0]['f_name'] ?></label>
+                <label><?php  echo $results[1]['f_name'] ?></label>
             </div>
             <div>
                 <label>Address : </label>
-                <label><?php  echo $results[0]['address'] ?></label>
+                <label><?php  echo $results[1]['address'] ?></label>
             </div>
             <table>
                 <tr>

@@ -1,0 +1,50 @@
+<html>
+
+<head>
+    <title>Student Registration</title>
+</head>
+
+<body>
+    <form method="post" name="student_ragistration" id="student_ragistration" action="/boardresults/student/student_registration.php">
+        <div>
+            <table>
+                <tr>
+                    <td>Student Name</td>
+                    <td><input type="text"  name="student_name" id="student_id" /></td>
+                </tr>
+                <td>Father Name</td>
+                <td> <input type="text" name="father_name" id="father_id" /></td>
+                <tr>
+                    <td>Address</td>
+                   <td> <input type="text"  name="address" id="address_id" /> </td>
+                </tr>
+                <tr>
+                    <td>Course Name</td>
+                        <td>
+                            <div>
+                            <label for="course"></label>
+                            <select name="course" id="course">
+                                <option value="">--Please choose an option--</option>
+                                <option value="1st">12th</option>
+                                <option value="2nd">11th</option>
+                                <option value="3rd">10th</option>
+                            </select>
+                        </div></td>
+                </tr>
+            </table>
+            
+            <input type="submit" value="Rgistration Now" id="get_result" onclick="checkValue()" />
+        </div>
+    </form>
+</body>
+
+</html>
+
+<script>
+    function checkValue() {
+        if (document.getElementById("book_number").value == "") {
+            alert("Enter book no");
+        }
+    }
+
+</script>
