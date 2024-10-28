@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Marks Registration</title>
+    </head>
+
+    <body>
+        <form method="post" name="marks_form" id="marks_from" action="/boardresults/student/marks_registration.php">
+            <div>
+                <table>
+                    <tr>
+                        <td><input type="number" placeholder="Enter student id" name="student_id" id="student_id" />
+                    </td></tr>
+                    <tr>
+                        <td><input type="number" placeholder="Enter subject id" name="subject_id" id="subject_id" />
+                    </td></tr>
+                    <tr>
+                        <td><input type="number" placeholder="Enter obtained marks" name="marks_obtained" id="marks_obtained_id" />
+                    </td></tr>
+                    <tr>
+                        <td> 
+                        <input type="number" placeholder="Enter maximum marks" name="maximum_marks" id="maximun_marks_id" />
+                    </td></tr>
+                    <tr>
+                        <td><input type="submit" value="Marks Registration" id="marksRegistration_id" onclick="checkValue()"/>
+                    </td></tr>
+            </table>
+            </div>
+        </form>
+    </body>
+</html>
+<script>
+    function checkValue(){
+        if(document.getElementById("roll_number").value == ""){
+            alert("fill all the information");
+        }
+    }
+
+</script>

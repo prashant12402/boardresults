@@ -49,13 +49,6 @@
             require("result_error.html");
         }
     }
-
-    if($_SERVER["REQUEST_METHOD"] == "POST"){
-        
-        print("I am here, I am post request");
-    }
-
-
     function get_connection(){
         $dsn = "mysql:host=localhost;dbname=upboardresult";
         $user = "root";

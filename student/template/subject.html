@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Subject Registration </title></head>
+    <body>
+        <form  method="post" name="subject_registration" id="subject_registration"  action="/boardresults/student/subject_registration.php">
+            <div>
+            <table>
+            <tr>
+                <td> Choose Subject Name</td>
+                </tr>
+                <tr>
+                    <div>
+                <td> <label for="subject_name"></label>
+                    <select name="subject_name">
+                     <option value="Hindi">Hindi </option>
+                     <option value="English">English</option>
+                     <option value="Maths"> Maths</option>
+                     <option value="Science">Science</option>
+                     <option value="Arts">Arts</option>
+                    </select>
+                </div>
+                    </tr>
+                    <tr>
+                    <td><input type="submit" value=" Subject Registration Now" id="sub_registration_id" onclick="checkSubjectName()" /></td></td>
+            </tr>
+        </table>
+    </div>
+        </form>
+        <script>
+            function checkSubjectName(){
+                if(document.getElementById("subject_name").value == ""){
+            alert("choose subject");
+        } 
+    }
+        </script>
+    </body>
+</html> 
