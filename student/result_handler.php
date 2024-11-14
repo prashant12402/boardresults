@@ -25,7 +25,7 @@
 
         //var_dump($results);
 
-        if(count($results) > 0 ){
+        if( $results){
             foreach($results as $result) {
                 $marksObtained = $marksObtained + $result['marks_obtained'];
                 $maxMarks = $maxMarks + $result['max_marks'];

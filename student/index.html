@@ -2,27 +2,50 @@
     <head>
         <title>UP Board Results</title>
     </head>
-
+        <style>
+            *{
+                background-color:aquamarine;
+                text-align: center;
+                padding:10px;
+                color: coral;
+            }
+        </style>
     <body>
         <form method="get" name="result_form" id="result_form" action="/boardresults/student/result_handler.php">
             <div>
-                <input type="text" placeholder="Enter your Roll no" name="roll_number" id="roll_number" />
-                <input type="submit" value="Get Result" id="get_result" onclick="checkValue()"/>
+                <input type="text" placeholder="Enter your Roll no" name="roll_number" id="roll_number"  required/>
+                <input type="submit" value="Get Result" id="get_result"/>
             </div>
-
-            <a href="/boardresults/student/template/student.html"> Library </a>
+            <a href="/boardresults/student/template/student.html"> Student </a>
             <a href="/boardresults/student/template/admin.html"> Admin </a>
             <a href="/boardresults/student/template/subject.html"> Subject</a>
             <a href="/boardresults/student/template/marks.html">Marks</a>
         </form>
+        <script>
+        //     function checkValue(){
+        //         if (document.getElementsById("check_id").checkValue != null && roll_number == "") {
+        //  alert("Please enter> the username. Can’t be blank or empty !!!");
+        //  return false;
+        //     }
+        // }
+//         function checkValue()
+// {
+// var empt = document.forms["result_form"]["roll_number"].value;
+// if (empt == "")
+// {
+// alert("Please input a Value");
+// return true;
+// }
+// else 
+// {
+// alert('Code has accepted : you can try another');
+// return true; 
+// }
+// }
+
+        </script>
     </body>
 </html>
 
-<script>
-    function checkValue(){
-        if(document.getElementById("roll_number").value == ""){
-            alert("Enter roll no");
-        }
-    }
 
-</script>
+

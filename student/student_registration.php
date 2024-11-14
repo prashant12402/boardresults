@@ -13,7 +13,6 @@
         if($status == 1){
             $status = true;
         }
-
         require("student_registration_status.php");
     }
 

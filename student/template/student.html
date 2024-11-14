@@ -1,22 +1,28 @@
 <html>
-
 <head>
     <title>Student Registration</title>
+    <link rel="stylesheet" href="mystyle.css">
+    <style>
+        p{
+            background-color: blue;
+            color: yellow;
+        }
+    </style>
 </head>
-
-<body>
-    <form method="post" name="student_ragistration" id="student_ragistration" action="/boardresults/student/subject_registration.php">
-        <div>
+<body >  
+    <p>hello how are you</p>
+    <form method="post" name="student_ragistration" id="student_ragistration" action="/boardresults/student/student_registration.php">
+        <div class="hello">
             <table>
                 <tr>
-                    <td>Student Name</td>
-                    <td><input type="text"  name="student_name" id="student_id" /></td>
+                    <td >Student Name</td>
+                    <td><input type="text"  name="student_name" id="student_id" required/></td>
                 </tr>
                 <td>Father Name</td>
-                <td> <input type="text" name="father_name" id="father_id" /></td>
-                <tr>
+                <td> <input type="text" name="father_name" id="father_id" required/></td>
+                <tr >
                     <td>Address</td>
-                   <td> <input type="text"  name="address" id="address_id" /> </td>
+                   <td> <input type="text"  name="address" id="address_id" required /> </td>
                 </tr>
                 <tr>
                     <td>Course Name</td>
@@ -33,18 +39,18 @@
                 </tr>
             </table>
             
-            <input type="submit" value="Registration Now" id="get_result" onclick="checkValue()" />
+            <input type="submit" value="Registration Now" id="get_result"  />
         </div>
     </form>
 </body>
 
 </html>
 
-<script>
+<!-- <script>
     function checkValue() {
         if (document.getElementById("book_number").value == "") {
             alert("Enter book no");
         }
     }
 
-</script>
+</script> -->
